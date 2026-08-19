@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<rect width="1100" height="650" fill="#ffffff"/>
+<style>
+.box{fill:#f8fafc;stroke:#334155;stroke-width:2}
+.title{font:700 20px Arial;fill:#0f172a}
+.txt{font:14px Arial;fill:#334155}
+.rel{font:700 15px Arial;fill:#475569}
+.line{stroke:#64748b;stroke-width:2}
+</style>
+<rect class="box" x="60" y="70" width="300" height="220" rx="12"/>
+<text class="title" x="85" y="105">CONTACTS</text>
+<text class="txt" x="85" y="135">PK id</text>
+<text class="txt" x="85" y="158">name</text>
+<text class="txt" x="85" y="181">UK email</text>
+<text class="txt" x="85" y="204">phone</text>
+<text class="txt" x="85" y="227">company</text>
+<text class="txt" x="85" y="250">job_title, notes</text>
+<text class="txt" x="85" y="273">created_at, updated_at</text>
+
+<rect class="box" x="740" y="70" width="300" height="220" rx="12"/>
+<text class="title" x="765" y="105">PIPELINES</text>
+<text class="txt" x="765" y="135">PK id</text>
+<text class="txt" x="765" y="158">UK name</text>
+<text class="txt" x="765" y="181">description</text>
+<text class="txt" x="765" y="204">JSON stages</text>
+<text class="txt" x="765" y="227">is_active</text>
+<text class="txt" x="765" y="250">created_at, updated_at</text>
+
+<rect class="box" x="380" y="300" width="340" height="260" rx="12"/>
+<text class="title" x="405" y="335">LEADS</text>
+<text class="txt" x="405" y="365">PK id</text>
+<text class="txt" x="405" y="388">FK contact_id → contacts.id</text>
+<text class="txt" x="405" y="411">FK pipeline_id → pipelines.id</text>
+<text class="txt" x="405" y="434">title, status, stage</text>
+<text class="txt" x="405" y="457">source, estimated_value</text>
+<text class="txt" x="405" y="480">expected_close_date</text>
+<text class="txt" x="405" y="503">notes</text>
+<text class="txt" x="405" y="526">created_at, updated_at</text>
+
+<rect class="box" x="60" y="380" width="260" height="180" rx="12"/>
+<text class="title" x="85" y="415">ACTIVITY_LOGS</text>
+<text class="txt" x="85" y="445">PK id</text>
+<text class="txt" x="85" y="468">FK lead_id → leads.id</text>
+<text class="txt" x="85" y="491">activity_type</text>
+<text class="txt" x="85" y="514">description</text>
+<text class="txt" x="85" y="537">activity_at, created_at</text>
+
+<line class="line" x1="360" y1="220" x2="500" y2="300"/>
+<line class="line" x1="740" y1="220" x2="600" y2="300"/>
+<line class="line" x1="320" y1="470" x2="380" y2="470"/>
+<text class="rel" x="390" y="275">1 : many</text>
+<text class="rel" x="610" y="275">1 : many</text>
+<text class="rel" x="275" y="455">1 : many</text>
+</svg>
